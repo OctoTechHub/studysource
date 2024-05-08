@@ -1,6 +1,6 @@
 export const materials = [
     {
-      title: 'Material Title 1',
+      title: 'sem 1',
       driveLink: 'Drive Link 1',
       semester: 1,
       department: 1,
