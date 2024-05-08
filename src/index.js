@@ -1,0 +1,1 @@
+import 'public/tailwind.css';
