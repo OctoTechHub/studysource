@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink , Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import handWritten from "./HandNotes";
 import Maintainers from "./Maintainers";
 import Nav from "./Nav";
