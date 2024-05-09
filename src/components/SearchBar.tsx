@@ -11,7 +11,7 @@ const SearchBar = () => {
 
     return <>
         <div className="flex flex-col items-center mt-8">
-            <h1 className="text-slate-400 hover:text-sky-400 mb-10">Find All Materials Here</h1>
+            <h1 className="text-slate-400 l	 hover:text-sky-400 mb-10">Find All Materials Here</h1>
             <div className="">
                 <div className="mb-4">
                     <input
