@@ -11,17 +11,17 @@ const SearchBar = () => {
 
     return <>
         <div className="flex flex-col items-center mt-8">
-            <h1 className="text-2xl font-bold mb-4">Study Material 📚</h1>
+            <h1 className="text-slate-400 hover:text-sky-400 mb-10">Find All Materials Here</h1>
             <div className="">
                 <div className="mb-4">
                     <input
                         type="text"
-                        placeholder="Search..."
+                        placeholder="Search Docs"
                         value={searchQuery}
                         onChange={handleSearchQueryChange}
                         className="border rounded-lg p-1 mr-2"
                     />
-                    <Link to="/" className="text-blue-500 hover:underline">
+                    <Link to="/" className="text-blue-500 hover:underline bg-white rounded-lg p-2">
                         Clear Search
                     </Link>
                 </div>
