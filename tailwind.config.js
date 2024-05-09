@@ -4,8 +4,9 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {colors: {navbarColor: '#144b66'}},
   },
   plugins: [],
 }
 
+// #39b2ea
