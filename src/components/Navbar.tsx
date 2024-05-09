@@ -6,7 +6,7 @@ import Home from "./Home";
 
 const Navbar = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
             <BrowserRouter>
             <div>
                 <Nav/>
