@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearchQueryChange = (event) => {
+  const handleSearchQueryChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setSearchQuery(event.target.value);
   };
 

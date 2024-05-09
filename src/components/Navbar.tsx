@@ -6,9 +6,9 @@ import Home from "./Home";
 
 const Navbar = () => {
     return (
-        <div className="flex flex-row w-full justify-between">
+        <div className="flex flex-col">
             <BrowserRouter>
-            <div className="">
+            <div>
                 <Nav/>
             </div>
             <div>
