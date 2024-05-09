@@ -23,7 +23,7 @@ const DisplayMaterials : React.FC<DisplayMaterialsProps> = ({searchQuery}) => {
                 <a href={material.driveLink} className="text-blue-500 hover:underline mb-2">
                     Drive Link 
                 </a>
-                <p className="text-gray-500">Semester: {material.semester}</p>
+                <p className="text-gray-500">Semester: {material.Semester}</p>
                 <p className="text-gray-500">Department: {material.department}</p>
             </div>
         ))}
