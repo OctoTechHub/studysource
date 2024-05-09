@@ -1,5 +1,5 @@
 import { BrowserRouter, NavLink , Route, Routes } from "react-router-dom";
-import About from "./About";
+import handWritten from "./HandNotes";
 import Maintainers from "./Maintainers";
 import Nav from "./Nav";
 import Home from "./Home";
@@ -14,7 +14,7 @@ const Navbar = () => {
             <div>
             <Routes>
                 <Route path="/" Component={Home}></Route>
-                <Route path="/About" Component={About}></Route>
+                <Route path="/notes" Component={handWritten}></Route>
                 <Route path="/Maintainers" Component={Maintainers}></Route>
             </Routes>
             </div>
