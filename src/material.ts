@@ -48,3 +48,10 @@ export const materials = [
     department: 'CSE',
   }
 ];
+
+
+const handWritten = [
+  {
+    
+  }
+]
