@@ -2,32 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .maintainers {
-    @apply flex justify-center mt-8;
-  }
-
-  .maintainers .bg-white {
-    @apply shadow rounded-lg p-6;
-  }
-
-  .maintainers h2 {
-    @apply text-2xl font-bold mb-4;
-  }
-
-  .maintainers p {
-    @apply mb-4;
-  }
-
-  .maintainers ul {
-    @apply list-disc list-inside mt-4;
-  }
-
-  .maintainers li {
-    @apply flex items-center mb-2;
-  }
-
-  .maintainers img {
-    @apply inline-block mr-2 rounded-full;
-  }
-}
