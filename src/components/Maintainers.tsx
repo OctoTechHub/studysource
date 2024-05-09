@@ -2,33 +2,88 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const Maintainers = () =>{
-    return (
-        <div className="flex justify-center mt-16 ">
-        <div className="bg-white shadow rounded-lg p-4 ">
-          <h2 className="text-2xl font-bold mb-4 ">Maintainers <FontAwesomeIcon icon={faUsers} className="mr-2" /></h2>
-          <p className="mb-4">Here are the maintainers of the project:</p>
-          <ul className="list-disc list-inside mt-4">
-            <li className="flex items-center mb-2">
-              <img src="https://avatars.githubusercontent.com/u/67964054?s=400&u=55e2235b95ee24beab93a1d34c4a382cc4cb9efa&v=4" alt="Krish Soni" className="inline-block mr-2 rounded-full" width="48" height="48" />
-              <span>
-                Krish Soni (
-                <a href="https://github.com/krishvsoni" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">@krishvsoni</a>
-                )
-              </span>
-            </li>
-            <li className="flex items-center mb-2">
-              <img src="https://avatars.githubusercontent.com/u/115367435?v=4" alt="Dishant Miyani" className="inline-block mr-2 rounded-full" width="48" height="48" />
-              <span>
-                Dishant Miyani (
-                <a href="https://github.com/Dishant1804" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">@Dishant1804</a>
-                )
-              </span>
-            </li>
-          </ul>
+const Maintainers: React.FC = () => {
+  return (
+    <div className="flex flex-col items-center mt-16">
+      <div className="bg-white shadow rounded-lg p-4">
+        <h2 className="text-2xl font-bold mb-4">
+          Maintainers <FontAwesomeIcon icon={faUsers} className="mr-2" />
+        </h2>
+        <p className="mb-4">Here are the maintainers of the project:</p>
+        <ul className="list-disc list-inside mt-4">
+          <li className="flex items-center mb-2">
+            <img
+              src="https://avatars.githubusercontent.com/u/67964054?s=400&u=55e2235b95ee24beab93a1d34c4a382cc4cb9efa&v=4"
+              alt="Krish Soni"
+              className="inline-block mr-2 rounded-full"
+              width="48"
+              height="48"
+            />
+            <span>
+              Krish Soni (
+              <a
+                href="https://github.com/krishvsoni"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                @krishvsoni
+              </a>
+              )
+            </span>
+          </li>
+          <li className="flex items-center mb-2">
+            <img
+              src="https://avatars.githubusercontent.com/u/115367435?v=4"
+              alt="Dishant Miyani"
+              className="inline-block mr-2 rounded-full"
+              width="48"
+              height="48"
+            />
+            <span>
+              Dishant Miyani (
+              <a
+                href="https://github.com/Dishant1804"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                @Dishant1804
+              </a>
+              )
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div className="bg-white shadow rounded-lg p-4 mt-8">
+        <h2 className="text-2xl font-bold mb-4">Contributors</h2>
+        <p className="mb-4">
+          Want to get featured here? Contribute to the project and make it better!
+        </p>
+        <div className="flex items-center mb-2">
+          <img
+            src="https://avatars.githubusercontent.com/u/12345678?v=4"
+            alt="Contributor"
+            className="inline-block mr-2 rounded-full"
+            width="48"
+            height="48"
+          />
+          <span>
+            Contributor Name (
+            <a
+              href="https://github.com/OctoTechHub/Study-Material/contributors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 underline"
+            >
+              @contributor
+            </a>
+            )
+          </span>
         </div>
       </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Maintainers;
