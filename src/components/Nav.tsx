@@ -15,8 +15,8 @@ export default function Nav() {
           <div className="pl-8 flex flex-row items-center">
             <Link to="/">
               <div className="flex items-center ">
-                <div className="font-bold	text-2xl text-white mr-2">Study Material</div>
-                <img src="public/navIcon.svg" alt="navIcon" className="h-8" />
+                <div className="font-bold	text-2xl text-white mr-2">studysource</div>
+                
               </div>
             </Link>
           </div>
