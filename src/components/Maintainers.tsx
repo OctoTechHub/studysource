@@ -1,10 +1,29 @@
-import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
 
 const Maintainers: React.FC = () => {
+  const [contributors, setContributors] = useState([]);
+
+  useEffect(() => {
+    const fetchContributors = async () => {
+      try {
+        const response = await axios.get(
+          'https://api.github.com/repos/OctoTechHub/studysource/contributors'
+        );
+        setContributors(response.data);
+      } catch (error) {
+        console.error('Error fetching contributors:', error);
+      }
+    };
+
+    fetchContributors();
+  }, []);
+
   return (
     <div className="flex flex-col items-center mt-16">
+      {/* Maintainers section */}
       <div className="bg-white shadow rounded-lg p-4">
         <h2 className="text-2xl font-bold mb-4">
           Maintainers <FontAwesomeIcon icon={faUsers} className="mr-2" />
@@ -60,27 +79,31 @@ const Maintainers: React.FC = () => {
         <p className="mb-4">
           Want to get featured here? Contribute to the project and make it better!
         </p>
-        <div className="flex items-center mb-2">
-          <img
-            src="https://avatars.githubusercontent.com/u/12345678?v=4"
-            alt="Contributor"
-            className="inline-block mr-2 rounded-full"
-            width="48"
-            height="48"
-          />
-          <span>
-            Contributor Name (
-            <a
-              href="https://github.com/OctoTechHub/Study-Material/contributors"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline"
-            >
-              @contributor
-            </a>
-            )
-          </span>
-        </div>
+        {/* <div className="grid grid-cols-2 gap-4">
+          {contributors.map((contributor) => (
+            <div className="flex items-center" key={contributor.id}>
+              <img
+                src={contributor.avatar_url}
+                alt={contributor.login}
+                className="inline-blockmr-2 rounded-full"
+                width="48"
+                height="48"
+              />
+              <span>                                                     // Uncomment when we have more than 10 contributors
+                {contributor.login} (
+                <a
+                  href={contributor.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 underline"
+                >
+                  @{contributor.login}
+                </a>
+                )
+              </span>
+            </div>
+          ))}
+        </div> */}
       </div>
     </div>
   );
