@@ -16,7 +16,7 @@ export default function Nav() {
             <Link to="/">
               <div className="flex items-center ">
                 <div className="font-bold	text-2xl text-white mr-2">studysource</div>
-                <img src="public/navIcon.svg" alt="navIcon" className="h-8" />
+                
               </div>
             </Link>
           </div>
