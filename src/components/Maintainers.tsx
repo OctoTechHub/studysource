@@ -23,7 +23,6 @@ const Maintainers: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center mt-16">
-      {/* Maintainers section */}
       <div className="bg-white shadow rounded-lg p-4">
         <h2 className="text-2xl font-bold mb-4">
           Maintainers <FontAwesomeIcon icon={faUsers} className="mr-2" />
@@ -79,20 +78,18 @@ const Maintainers: React.FC = () => {
         <p className="mb-4">
           Want to get featured here? Contribute to the project and make it better!
         </p>
-        {/* <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {contributors.map((contributor) => (
             <div className="flex items-center" key={contributor.id}>
               <img
                 src={contributor.avatar_url}
-                alt={contributor.login}
                 className="inline-blockmr-2 rounded-full"
                 width="48"
                 height="48"
               />
-              <span>                                                     // Uncomment when we have more than 10 contributors
+              <span>                                                    
                 {contributor.login} (
                 <a
-                  href={contributor.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 underline"
@@ -103,7 +100,7 @@ const Maintainers: React.FC = () => {
               </span>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -50,8 +50,14 @@ export const materials = [
 ];
 
 
-// const handWritten = [
-//   {
-    
-//   }
-// ]
+ export const handWritten = [
+   {
+    title: 'SQL by Preksha Mahajan',
+    driveLink: 'https://drive.google.com/file/d/19RDN5vda876SQyKVUxH70LImLEJRj7MU/view?usp=sharing'
+   },
+
+   {
+    title: 'Machine Learning Notes',
+    driveLink: 'https://drive.google.com/file/d/1c6PK5paEIGutb2LeDponkbPDLL4eFbop/view?usp=sharing'
+   }
+ ]
