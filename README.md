@@ -23,6 +23,13 @@ We welcome contributions to Studysource! To contribute, follow these steps:
     },
     ```
 
+    ```typescript
+      {
+        title: ' ',
+        driveLink: ' '
+   },
+    ```
+
 5. Commit your changes and open a pull request.
 
 Please note that all contributions must be relevant to engineering and technology courses, and must be in a format that is easy to read and understand. We reserve the right to reject any contributions that do not meet these criteria.
