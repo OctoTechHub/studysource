@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers } from '@fortawesome/free-solid-svg-icons/faUsers';
 
 const Maintainers: React.FC = () => {
-  const [contributors, setContributors] = useState([]);
+  const [contributors, setContributors] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchContributors = async () => {
@@ -83,16 +83,15 @@ const Maintainers: React.FC = () => {
             <div className="flex items-center" key={contributor.id}>
               <img
                 src={contributor.avatar_url}
-                className="inline-blockmr-2 rounded-full"
+                className="inline-block mr-2 rounded-full"
                 width="48"
                 height="48"
               />
-              <span>                                                    
+              <span>
                 {contributor.login} (
                 <a
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 underline"
+                  rel="noopener noreferrer"className="text-blue-500 underline"
                 >
                   @{contributor.login}
                 </a>
