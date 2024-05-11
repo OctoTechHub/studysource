@@ -83,7 +83,6 @@ const Maintainers: React.FC = () => {
             <div className="flex items-center" key={contributor.id}>
               <img
                 src={contributor.avatar_url}
-                alt={contributor.login}
                 className="inline-blockmr-2 rounded-full"
                 width="48"
                 height="48"
@@ -91,7 +90,6 @@ const Maintainers: React.FC = () => {
               <span>                                                    
                 {contributor.login} (
                 <a
-                  href={contributor.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 underline"
