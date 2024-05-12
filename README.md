@@ -15,7 +15,6 @@ We welcome contributions to Studysource! To contribute, follow these steps:
 4. Add the title and link of your contribution to the appropriate section in the format shown below:
 
     ```typescript
-// For Academic Notes
     {
       title: ' ',
       driveLink: '',
@@ -25,7 +24,6 @@ We welcome contributions to Studysource! To contribute, follow these steps:
     ```
 
     ```typescript
-// For Placement Notes
       {
         title: ' ',
         driveLink: ' '
