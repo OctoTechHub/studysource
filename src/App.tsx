@@ -6,7 +6,7 @@ function App() {
   
 
   return (
-    <div className='h-screen overflow-hidden bg-picton-blue-100'>
+    <div className='h-full overflow-hidden bg-picton-blue-100'>
       <Navbar/>
     </div>
 
