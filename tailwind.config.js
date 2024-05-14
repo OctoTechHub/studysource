@@ -4,7 +4,7 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {colors: {navbarColor: '#144b66', footerColor: '#144b66'}},
+    extend: {colors: {navbarColor: '#007fff', footerColor: '#144b66'}},
   },
   plugins: [],
 }

@@ -1,3 +1,4 @@
+
 import SearchBar from './SearchBar';
 
 const Home = () => {
