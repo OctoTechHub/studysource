@@ -36,13 +36,13 @@ export default function Nav() {
           </div>
         </div>
         {isOpen && (
-          <div className="p-4 bg-gray-800">
+          <div className="p-4 bg-gray-200">
             <div className="flex flex-col">
-              <Link to="/notes" className="text-white mb-2 flex items-center">
+              <Link to="/notes" className="text-bold mb-2 flex items-center">
                 <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
                 Written Notes
               </Link>
-              <Link to="/Maintainers" className="text-white mb-2 flex items-center">
+              <Link to="/Maintainers" className="text-bold mb-2 flex items-center">
                 <FontAwesomeIcon icon={faUsers} className="mr-2" />
                 Maintainers
               </Link>

@@ -8,7 +8,7 @@ interface Message {
 const Chatbot: React.FC = () => {
   const [userInput, setUserInput] = useState('');
   const [messages, setMessages] = useState<Message[]>([]);
-  const [token] = useState(process.env.TOKEN);
+  const [token] = useState(process.env.ACCESS_TOKEN);
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setMessages([...messages, { message: userInput, sender: 'user' }]);
