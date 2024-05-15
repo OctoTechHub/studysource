@@ -46,7 +46,14 @@ export const materials = [
     driveLink: 'Coming soon',
     semester: 8,
     department: 'CSE',
+  },
+  {
+    title: 'Competetive Coding Manual',
+    driveLink:'https://drive.google.com/file/d/1AoUgr2mqB_gsHdDSXugyz5MD8l3Z4AYS/view?usp=drive_link',
+    semester: 4,
+    department: 'CSE-IT',
   }
+  
 ];
 
 
