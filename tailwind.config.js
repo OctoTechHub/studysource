@@ -8,5 +8,3 @@ export default {
   },
   plugins: [],
 }
-
-// #39b2ea

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import DisplayMaterials from './Materials';
+import DisplayMaterials from './DisplayMaterials';
 import Chatbot from './Chatbot';
 
-const SearchBar: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState<string>("");
+const SearchBar = ({searchQuery , setSearchQuery} : {searchQuery :string , setSearchQuery : React.Dispatch<React.SetStateAction<string>> }) => {
   const [showChatbot, setShowChatbot] = useState<boolean>(false);
 
   const handleSearchQueryChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
