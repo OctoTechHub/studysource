@@ -4,7 +4,7 @@ import HandWrittenNotes from './DisplayHandwritten';
 
 const HandWritten: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [showChatbot, setShowChatbot] = useState<boolean>(false);
+  const [] = useState<boolean>(false);
 
   const handleSearchQueryChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setSearchQuery(event.target.value);
@@ -14,9 +14,7 @@ const HandWritten: React.FC = () => {
     setSearchQuery("");
   }
 
-  const toggleChatbot = () => {
-    setShowChatbot(!showChatbot);
-  };
+
 
   return (
     <div className="flex flex-col items-center mt-8 w-full">
