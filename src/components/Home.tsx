@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import SearchBar from './SearchBar';
-import DisplayMaterials from './DisplayMaterials';
+import { useState } from "react";
+import SearchBar from "./SearchBar";
+import DisplayMaterials from "./DisplayMaterials";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");

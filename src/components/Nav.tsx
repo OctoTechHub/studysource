@@ -10,11 +10,11 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="w-full bg-picton-blue-950">
+      <nav className="w-full bg-blue-500"> 
         <div className="flex justify-between content-center p-4">
           <div className="pl-8 flex flex-row items-center">
             <Link to="/">
-              <div className="flex items-center ">
+              <div className="flex items-center  ">
                 <div className="font-bold	text-2xl text-white mr-2">studysource</div>
 
               </div>
@@ -36,13 +36,13 @@ export default function Nav() {
           </div>
         </div>
         {isOpen && (
-          <div className="p-4 bg-gray-200">
+          <div className="p-4 bg-gray-700">
             <div className="flex flex-col">
-              <Link to="/notes" className="text-bold mb-2 flex items-center">
+              <Link to="/notes" className="text-white mb-2 flex items-center">
                 <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
                 Placement Notes
               </Link>
-              <Link to="/Maintainers" className="text-bold mb-2 flex items-center">
+              <Link to="/Maintainers" className="text-white mb-2 flex items-center">
                 <FontAwesomeIcon icon={faUsers} className="mr-2" />
                 Maintainers
               </Link>

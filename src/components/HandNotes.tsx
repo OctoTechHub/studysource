@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { handWritten } from '../material';
 import HandWrittenNotes from './DisplayHandwritten';
-import Chatbot from './Chatbot';
 
 const HandWritten: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -44,7 +43,7 @@ const HandWritten: React.FC = () => {
       </button>
       {showChatbot && (
         <div className="absolute bottom-0 left-0 w-full h-full bg-gray-100">
-          <Chatbot />
+          {/* <Chatbot /> */}
         </div>
       )}
     </div>

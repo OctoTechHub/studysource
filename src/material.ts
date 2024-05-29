@@ -48,7 +48,7 @@ export const materials = [
     department: 'CSE',
   },
   {
-    title: 'Competetive Coding Manual',
+    title: ' CC Manual',
     driveLink:'https://drive.google.com/file/d/1AoUgr2mqB_gsHdDSXugyz5MD8l3Z4AYS/view?usp=drive_link',
     semester: 4,
     department: 'CSE-IT',
