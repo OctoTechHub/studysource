@@ -74,12 +74,12 @@ export const materials = [
    },
    
    {
-    title: 'Pro Mern E-Book',
+    title: 'Pro MERN E-Book',
     driveLink: 'https://drive.google.com/file/d/1NbYmPfE8ue-6NzWZGRyNp7QWdtJ3C2Um/view?usp=sharing'
    },
    
    {
-    title: 'Python for Datsa Science E-Book',
+    title: 'Python for Data Science E-Book',
     driveLink: 'https://drive.google.com/file/d/1AmuMOkOYiL24aiZb4flVzdeCPQwxbwHj/view?usp=sharing'
    },
    
@@ -149,7 +149,7 @@ export const materials = [
    },
    
    {
-    title: 'DevOP Notes',
+    title: 'DevOPS Notes',
     driveLink: 'https://drive.google.com/file/d/1JTM__BZ35vq_UIHHYJr0NEFHH6BJaa8i/view?usp=sharing'
    },
    
