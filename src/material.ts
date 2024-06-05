@@ -175,5 +175,9 @@ export const materials = [
    {
     title: 'Networking Handwritten Notes',
     driveLink: 'https://drive.google.com/file/d/110gggh-XlWnAXiM5gW1yUows9cle68Fo/view?usp=sharing'
+   },
+   {
+    title: 'DSA in Python Full Course with Material (Topicwise)',
+    driveLink: 'https://drive.google.com/drive/folders/1mlJXFaG363Rj-cvLV-6SPC-WvillsBNU?usp=drive_link'
    }
  ]
