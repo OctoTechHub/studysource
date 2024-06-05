@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons/faUsers";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons/faFileAlt";
-
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +21,16 @@ export default function Nav() {
             </Link>
           </div>
           <div className="w-1/6 flex justify-evenly">
+            <div>
+              <a
+                href="https://github.com/OctoTechHub/studysource"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white mr-4"
+              >
+                <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
+add              </a>
+            </div>
             <div>
               <button
                 className="text-white focus:outline-none"
