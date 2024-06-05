@@ -29,7 +29,7 @@ export default function Nav() {
                 className="text-white mr-4"
               >
                 <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
-add              </a>
+        </a>
             </div>
             <div>
               <button
