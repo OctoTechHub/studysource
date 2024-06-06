@@ -5,6 +5,8 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons/faUsers";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons/faFileAlt";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPalette } from "@fortawesome/free-solid-svg-icons/faPalette"; // Add this line
+
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,14 +31,14 @@ export default function Nav() {
                 className="text-white mr-4"
               >
                 <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
-        </a>
+              </a>
             </div>
             <div>
               <button
                 className="text-white focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
               >
-                {isOpen ? (
+                {isOpen? (
                   <FontAwesomeIcon icon={faTimes} className="h-6 w-6" />
                 ) : (
                   <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
@@ -51,6 +53,10 @@ export default function Nav() {
               <Link to="/notes" className="text-white mb-2 flex items-center">
                 <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
                 Placement Notes
+              </Link>
+              <Link to="/canvas" className="text-white mb-2 flex items-center">
+                <FontAwesomeIcon icon={faPalette} className="mr-2" />
+                Canvas
               </Link>
               <Link to="/Contributors" className="text-white mb-2 flex items-center">
                 <FontAwesomeIcon icon={faUsers} className="mr-2" />
