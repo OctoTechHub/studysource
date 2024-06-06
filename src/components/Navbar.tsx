@@ -9,7 +9,6 @@ import DoodlePage from "./DoodlePage";
 const Navbar = () => {
     const handleSave = (doodle: string) => {
       console.log("Doodle saved:", doodle);
-      // You can also save the doodle to a database or file here
     };
   
     return (
