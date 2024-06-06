@@ -1,3 +1,6 @@
+import { faRuler, faSave } from '@fortawesome/free-solid-svg-icons';
+import { faPalette } from '@fortawesome/free-solid-svg-icons/faPalette';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useRef, useEffect } from 'react';
 
 interface Point {
@@ -9,7 +12,7 @@ interface DoodlePageProps {
   onSave: (doodle: string) => void;
 }
 
-const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
+const DoodlePage: React.FC<DoodlePageProps> = ({ }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [drawing, setDrawing] = useState(false);
   const [lines, setLines] = useState<Point[][]>([]);
@@ -23,6 +26,8 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
       if (ctx) {
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
+        ctx.fillStyle = '#FFFFFF'; 
+        ctx.fillRect(0, 0, canvas.width, canvas.height); 
       }
     }
   }, []);
@@ -73,7 +78,10 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas before drawing
+    ctx.clearRect(0, 0, canvas.width, canvas.height); 
+
+    ctx.fillStyle = '#FFFFFF'; 
+    ctx.fillRect(0, 0, canvas.width, canvas.height); 
 
     ctx.strokeStyle = color;
     ctx.lineWidth = thickness;
@@ -122,7 +130,11 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
   const handleSave = () => {
     const canvas = canvasRef.current;
     if (canvas) {
-      onSave(canvas.toDataURL());
+      const dataURL = canvas.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.href = dataURL;
+      a.download = 'doodle.png';
+      a.click();
     }
   };
 
@@ -135,13 +147,17 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
   };
 
   return (
+    <>
+    <br></br>
     <div style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-      <div>
-        <label>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'pace-between' }}>
+        <label style={{ marginRight: 20 }}>
+          <FontAwesomeIcon icon={faPalette} style={{ marginRight: 10 }} />
           Color:
           <input type="color" value={color} onChange={handleColorChange} />
         </label>
-        <label>
+        <label style={{ marginRight: 20 }}>
+          <FontAwesomeIcon icon={faRuler} style={{ marginRight: 10 }} />
           Thickness:
           <input
             type="number"
@@ -151,7 +167,10 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
             max={20}
           />
         </label>
-        <button onClick={handleSave}>Save Doodle</button>
+        <button onClick={handleSave}>
+          <FontAwesomeIcon icon={faSave} style={{ marginRight: 10 }} />
+          Save
+        </button>
       </div>
       <canvas
         ref={canvasRef}
@@ -166,7 +185,7 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
         style={{ border: '1px solid gray', width: '100%', height: '100%' }}
       />
     </div>
+    </>
   );
-};
-
-export default DoodlePage;
+}
+  export default DoodlePage;
