@@ -12,7 +12,7 @@ interface DoodlePageProps {
 const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [drawing, setDrawing] = useState(false);
-  const [lines, setLines] = useState<Point[]>([]);
+  const [lines, setLines] = useState<Point[][]>([]);
   const [color, setColor] = useState('black');
   const [thickness, setThickness] = useState(5);
 
@@ -31,8 +31,16 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
     const canvas = canvasRef.current;
     const rect = canvas?.getBoundingClientRect();
     if (!rect) return { x: 0, y: 0 };
-    const clientX = 'touches' in event ? event.touches[0].clientX : (event as MouseEvent).clientX;
-    const clientY = 'touches' in event ? event.touches[0].clientY : (event as MouseEvent).clientY;
+    let clientX, clientY;
+
+    if (event instanceof MouseEvent) {
+      clientX = event.clientX;
+      clientY = event.clientY;
+    } else {
+      clientX = event.touches[0].clientX;
+      clientY = event.touches[0].clientY;
+    }
+
     const x = clientX - rect.left;
     const y = clientY - rect.top;
     return { x, y };
@@ -41,13 +49,17 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
   const startDrawing = (event: MouseEvent | TouchEvent) => {
     setDrawing(true);
     const position = getCursorPosition(event);
-    setLines([...lines, position]);
+    setLines((prevLines) => [...prevLines, [position]]);
   };
 
   const continueDrawing = (event: MouseEvent | TouchEvent) => {
     if (!drawing) return;
     const position = getCursorPosition(event);
-    setLines([...lines, position]);
+    setLines((prevLines) => {
+      const lastLine = prevLines[prevLines.length - 1];
+      lastLine.push(position);
+      return [...prevLines.slice(0, -1), lastLine];
+    });
     draw();
   };
 
@@ -67,12 +79,14 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
     ctx.lineWidth = thickness;
 
     ctx.beginPath();
-    lines.forEach((point, index) => {
-      if (index === 0) {
-        ctx.moveTo(point.x, point.y);
-      } else {
-        ctx.lineTo(point.x, point.y);
-      }
+    lines.forEach((line) => {
+      line.forEach((point, index) => {
+        if (index === 0) {
+          ctx.moveTo(point.x, point.y);
+        } else {
+          ctx.lineTo(point.x, point.y);
+        }
+      });
     });
     ctx.stroke();
   };
@@ -93,12 +107,12 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
 
   const handleTouchStart = (event: React.TouchEvent<HTMLCanvasElement>) => {
     event.preventDefault();
-    startDrawing(event.nativeEvent.touches[0]);
+    startDrawing(event.nativeEvent);
   };
 
   const handleTouchMove = (event: React.TouchEvent<HTMLCanvasElement>) => {
     event.preventDefault();
-    continueDrawing(event.nativeEvent.touches[0]);
+    continueDrawing(event.nativeEvent);
   };
 
   const handleTouchEnd = () => {
@@ -142,14 +156,14 @@ const DoodlePage: React.FC<DoodlePageProps> = ({ onSave }) => {
       <canvas
         ref={canvasRef}
         width={window.innerWidth}
-        height={window.innerHeight * 0.8} 
+        height={window.innerHeight * 0.8}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        style={{ border: '1px solid gray', width: '100%', height: '100%' }} 
+        style={{ border: '1px solid gray', width: '100%', height: '100%' }}
       />
     </div>
   );
