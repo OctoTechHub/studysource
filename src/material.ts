@@ -179,5 +179,9 @@ export const materials = [
    {
     title: 'DSA in Python Full Course with Material (Topicwise)',
     driveLink: 'https://drive.google.com/drive/folders/1mlJXFaG363Rj-cvLV-6SPC-WvillsBNU?usp=drive_link'
+   },
+   {
+    title: 'Pathway to Programming : Roadmaps to start any topic',
+    driveLink: 'https://drive.google.com/drive/folders/1OwqiY5xXhjEIH5eqKVHOA-G9WA749BEO?usp=drive_link'
    }
  ]
