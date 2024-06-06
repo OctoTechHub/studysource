@@ -52,9 +52,9 @@ export default function Nav() {
                 <FontAwesomeIcon icon={faFileAlt} className="mr-2" />
                 Placement Notes
               </Link>
-              <Link to="/Maintainers" className="text-white mb-2 flex items-center">
+              <Link to="/Contributors" className="text-white mb-2 flex items-center">
                 <FontAwesomeIcon icon={faUsers} className="mr-2" />
-                Maintainers
+                Community
               </Link>
 
             </div>
