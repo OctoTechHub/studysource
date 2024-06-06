@@ -19,7 +19,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchQuery, setSearchQuery }) =>
   };
 
   return (
-    <div className="flex items-center w-full max-w-[500px] border border-gray-300 rounded-full shadow-sm">
+    <div className="flex items-center w-full max-w-[400px] bg-white shadow-md rounded-full mt-5">
       <input
         type="text"
         name="search"
