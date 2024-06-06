@@ -25,7 +25,15 @@ const Contributors: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center mt-16">
+    <div
+      className="h-screen pt-0 flex flex-col items-center"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, #3498db, #2ecc71)`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="bg-white shadow rounded-lg p-4 mt-8">
         <h2 className="text-2xl font-bold mb-4">Contributors <FontAwesomeIcon icon={faUsers} className="mr-2" /> </h2>
         <p className="mb-4">
