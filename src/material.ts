@@ -2,7 +2,7 @@ export const materials = [
   {
     title: 'Odd Sem Time Table 2024-2025',
     driveLink: 'https://drive.google.com/drive/folders/1Zz9jmbsaYiATta02ijN1tIFucZiysF_E?usp=drive_link',
-    semester: 3-5-7,
+    semester: "3-5-7",
     department: 'All Department',
 
   },
