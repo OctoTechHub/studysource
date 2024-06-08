@@ -66,14 +66,16 @@ export const materials = [
 
 
  export const handWritten = [
-   {
-     title: 'IBM Placement Drive",
-     driveLink: "https://drive.google.com/drive/folders/1trLM1LSlMaWQAR4I0PhIffMej6OuHuKZ?usp=drive_link"
-   },
+
 
    {
     title: 'SQL by Preksha Mahajan',
     driveLink: 'https://drive.google.com/file/d/19RDN5vda876SQyKVUxH70LImLEJRj7MU/view?usp=sharing'
+   },
+   
+   {
+     title: 'IBM Placement Drive",
+     driveLink: "https://drive.google.com/drive/folders/1trLM1LSlMaWQAR4I0PhIffMej6OuHuKZ?usp=drive_link"
    },
 
    {
