@@ -5,7 +5,7 @@ import Home from "./Home";
 import { Hello } from "./helloWorld";
 import Contributors from "./Contributors";
 import DoodlePage from "./DoodlePage";
-
+import GroupStudy from "./GroupStudy";
 const Navbar = () => {
     const handleSave = (doodle: string) => {
       console.log("Doodle saved:", doodle);
@@ -23,6 +23,7 @@ const Navbar = () => {
               <Route path="/notes" Component={handWritten} />
               <Route path="/Contributors" Component={Contributors} />
               <Route path="/Canvas" Component={() => <DoodlePage onSave={handleSave} />} />
+              <Route path="/group" Component={GroupStudy} />
               <Route path="/hello" Component={Hello} />
             </Routes>
           </div>
