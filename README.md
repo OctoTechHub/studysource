@@ -13,7 +13,7 @@ We welcome contributions to Studysource! To contribute, follow these steps:
 2. Create a new branch.
 3. Navigate to the `src/material.ts` file.
 4. Add the title and link of your contribution to the appropriate section in the format shown below:
-
+   - For Academic Notes
     ```typescript
     {
       title: ' ',
@@ -22,7 +22,7 @@ We welcome contributions to Studysource! To contribute, follow these steps:
       department: ' ',
     },
     ```
-
+   - For Non-Academic/Placement Notes
     ```typescript
       {
         title: ' ',

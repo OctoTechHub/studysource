@@ -1,29 +1,34 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import handWritten from "./HandNotes";
-import Maintainers from "./Maintainers";
 import Nav from "./Nav";
 import Home from "./Home";
 import { Hello } from "./helloWorld";
+import Contributors from "./Contributors";
+import DoodlePage from "./DoodlePage";
 
 const Navbar = () => {
+    const handleSave = (doodle: string) => {
+      console.log("Doodle saved:", doodle);
+    };
+  
     return (
-        <div className="flex flex-col w-full ">
-            <BrowserRouter>
-            <div>
-                <Nav/>
-            </div>
-            <div>
+      <div className="flex flex-col w-full ">
+        <BrowserRouter>
+          <div>
+            <Nav />
+          </div>
+          <div>
             <Routes>
-                <Route path="/" Component={Home}></Route>
-                <Route path="/notes" Component={handWritten}></Route>
-                <Route path="/Maintainers" Component={Maintainers}></Route>
-                <Route path="/hello" Component={Hello}></Route>
-                
+              <Route path="/" Component={Home} />
+              <Route path="/notes" Component={handWritten} />
+              <Route path="/Contributors" Component={Contributors} />
+              <Route path="/Canvas" Component={() => <DoodlePage onSave={handleSave} />} />
+              <Route path="/hello" Component={Hello} />
             </Routes>
-            </div>
+          </div>
         </BrowserRouter>
-        </div>
+      </div>
     );
-}
+  };
 
 export default Navbar;
