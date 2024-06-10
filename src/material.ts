@@ -191,5 +191,9 @@ export const materials = [
    {
     title: 'Pathway to Programming : Roadmaps to start any topic',
     driveLink: 'https://drive.google.com/drive/folders/1OwqiY5xXhjEIH5eqKVHOA-G9WA749BEO?usp=drive_link'
+   },
+   {
+    title: 'Git E-Book',
+    driveLink: 'https://drive.google.com/file/d/1W1BdH3Esv3VgF1tkrUzxHswc7jxzwscM/view?usp=drive_link'
    }
  ]
