@@ -195,5 +195,9 @@ export const materials = [
    {
     title: 'Git E-Book',
     driveLink: 'https://drive.google.com/file/d/1W1BdH3Esv3VgF1tkrUzxHswc7jxzwscM/view?usp=drive_link'
+   },
+   {
+    title: 'Three.js Cheetsheet',
+    driveLink: 'https://drive.google.com/file/d/1dTRWonTsezreC_hzDiXxGxqX1emDThJM/view?usp=sharing'
    }
  ]
