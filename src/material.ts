@@ -2,11 +2,9 @@ export const materials = [
   {
     title: 'Odd Sem Time Table 2024-2025',
     driveLink: 'https://drive.google.com/drive/folders/1Zz9jmbsaYiATta02ijN1tIFucZiysF_E?usp=drive_link',
-    semester: "3-5-7",
+    semester: '3-5-7',
     department: 'All Department',
-
   },
-  
   {
     title: 'Sem 1 All Subjects',
     driveLink: 'https://drive.google.com/drive/folders/12XhDzO_IvUspP1VQFxTMiZNWWWXDSM0_?usp=sharing',
@@ -27,7 +25,7 @@ export const materials = [
   },
   {
     title: 'Sem 4 All Subjects',
-    driveLink: ' https://drive.google.com/drive/folders/1MK0aQlCQKbFtycSo7XjjMuCDCw9dO1lm?usp=sharing',
+    driveLink: 'https://drive.google.com/drive/folders/1MK0aQlCQKbFtycSo7XjjMuCDCw9dO1lm?usp=sharing',
     semester: 4,
     department: 'CSE',
   },
@@ -56,148 +54,124 @@ export const materials = [
     department: 'CSE',
   },
   {
-    title: 'Competetive Coding Manual',
-    driveLink:'https://drive.google.com/file/d/1AoUgr2mqB_gsHdDSXugyz5MD8l3Z4AYS/view?usp=drive_link',
+    title: 'Competitive Coding Manual',
+    driveLink: 'https://drive.google.com/file/d/1AoUgr2mqB_gsHdDSXugyz5MD8l3Z4AYS/view?usp=drive_link',
     semester: 4,
     department: 'CSE-IT',
-  }
-  
+  },
 ];
 
-
- export const handWritten = [
-   {
+export const handWritten = [
+  {
     title: 'SQL by Preksha Mahajan',
-    driveLink: 'https://drive.google.com/file/d/19RDN5vda876SQyKVUxH70LImLEJRj7MU/view?usp=sharing'
-   },
-
-   {
+    driveLink: 'https://drive.google.com/file/d/19RDN5vda876SQyKVUxH70LImLEJRj7MU/view?usp=sharing',
+  },
+  {
     title: 'Machine Learning Notes',
-    driveLink: 'https://drive.google.com/file/d/1c6PK5paEIGutb2LeDponkbPDLL4eFbop/view?usp=sharing'
-   },
-
-   {
+    driveLink: 'https://drive.google.com/file/d/1c6PK5paEIGutb2LeDponkbPDLL4eFbop/view?usp=sharing',
+  },
+  {
     title: 'Placement Material',
-    driveLink: 'https://drive.google.com/drive/folders/1gO_lXug0WWuwNGHlzY5ibPmYOVm7b44I?usp=drive_link'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/drive/folders/1gO_lXug0WWuwNGHlzY5ibPmYOVm7b44I?usp=drive_link',
+  },
+  {
     title: 'Pro MERN E-Book',
-    driveLink: 'https://drive.google.com/file/d/1NbYmPfE8ue-6NzWZGRyNp7QWdtJ3C2Um/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1NbYmPfE8ue-6NzWZGRyNp7QWdtJ3C2Um/view?usp=sharing',
+  },
+  {
     title: 'Python for Data Science E-Book',
-    driveLink: 'https://drive.google.com/file/d/1AmuMOkOYiL24aiZb4flVzdeCPQwxbwHj/view?usp=sharing'
-   },
-   
-   {
-    title: 'Real World PYTHON A HACKER’S GUIDE TO SOLVING PROBLEMS WITH CODE',
-    driveLink: 'https://drive.google.com/file/d/1QzOFl6waODGL4tjVDbwEJKIjfVz44eok/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1AmuMOkOYiL24aiZb4flVzdeCPQwxbwHj/view?usp=sharing',
+  },
+  {
+    title: 'Real World PYTHON: A Hacker’s Guide to Solving Problems with Code',
+    driveLink: 'https://drive.google.com/file/d/1QzOFl6waODGL4tjVDbwEJKIjfVz44eok/view?usp=sharing',
+  },
+  {
     title: 'Python Introduction E-Book',
-    driveLink: 'https://drive.google.com/file/d/1ZHOlcuoEWooGgCH11BoVA6tFQsNivxm-/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1ZHOlcuoEWooGgCH11BoVA6tFQsNivxm-/view?usp=sharing',
+  },
+  {
     title: 'SQL Notes',
-    driveLink: 'https://drive.google.com/file/d/1kf0I_KURnCMGfVmfjm8XBXnqekgU0CsI/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1kf0I_KURnCMGfVmfjm8XBXnqekgU0CsI/view?usp=sharing',
+  },
+  {
     title: 'React Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1FWkzc_afTt17FS4NfchIyRlIUojdONvJ/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1FWkzc_afTt17FS4NfchIyRlIUojdONvJ/view?usp=sharing',
+  },
+  {
     title: 'OS Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1qAv_0N3G_n5Q0ixLY8GcWHP8suQO9XWP/view?usp=sharing'
-   },
-   
-   {
-    title: 'Node-Js Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1fdnpHNkRu3KocleC0iUW1d2rCHMnk7RQ/view?usp=sharing'
-   },
-   
-   {
-    title: 'Mongo-DB Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1b7equ7lRYT-ZQo8RHrUe-WEO9K5x44nK/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1qAv_0N3G_n5Q0ixLY8GcWHP8suQO9XWP/view?usp=sharing',
+  },
+  {
+    title: 'Node.js Handwritten Notes',
+    driveLink: 'https://drive.google.com/file/d/1fdnpHNkRu3KocleC0iUW1d2rCHMnk7RQ/view?usp=sharing',
+  },
+  {
+    title: 'MongoDB Handwritten Notes',
+    driveLink: 'https://drive.google.com/file/d/1b7equ7lRYT-ZQo8RHrUe-WEO9K5x44nK/view?usp=sharing',
+  },
+  {
     title: 'JS Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1sVzHyb8PPfuVw3fVa11s0pyGBSfTXnVd/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1sVzHyb8PPfuVw3fVa11s0pyGBSfTXnVd/view?usp=sharing',
+  },
+  {
     title: 'Java Practice Questions',
-    driveLink: 'https://drive.google.com/file/d/1EKTda8LihUdZhniaf7d5bjj4eVGLdulN/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1EKTda8LihUdZhniaf7d5bjj4eVGLdulN/view?usp=sharing',
+  },
+  {
     title: 'Java Interview Material',
-    driveLink: 'https://drive.google.com/file/d/1BQRIXjF1VZP3FceLZDoFfYmxN3RprdCF/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1BQRIXjF1VZP3FceLZDoFfYmxN3RprdCF/view?usp=sharing',
+  },
+  {
     title: 'Java Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1Cnsem8SvosGJqn8Gu54DQRpvdvA0k0Pq/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1Cnsem8SvosGJqn8Gu54DQRpvdvA0k0Pq/view?usp=sharing',
+  },
+  {
     title: 'Express Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1g6_YYT4UU4imOh7s3eehCIYcZQDQTCvv/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1g6_YYT4UU4imOh7s3eehCIYcZQDQTCvv/view?usp=sharing',
+  },
+  {
     title: 'DSA Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/1RZMblX5llg2bVYeKZeDQpxKwb0NOpjjW/view?usp=sharing'
-   },
-   
-   {
-    title: 'DevOPS Notes',
-    driveLink: 'https://drive.google.com/file/d/1JTM__BZ35vq_UIHHYJr0NEFHH6BJaa8i/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1RZMblX5llg2bVYeKZeDQpxKwb0NOpjjW/view?usp=sharing',
+  },
+  {
+    title: 'DevOps Notes',
+    driveLink: 'https://drive.google.com/file/d/1JTM__BZ35vq_UIHHYJr0NEFHH6BJaa8i/view?usp=sharing',
+  },
+  {
     title: 'DSA E-Book',
-    driveLink: 'https://drive.google.com/file/d/1FcOaBbIm06841aqZW8PA6ME5WYZxVUGU/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/1FcOaBbIm06841aqZW8PA6ME5WYZxVUGU/view?usp=sharing',
+  },
+  {
     title: 'Algorithm Notes for Professionals',
-    driveLink: 'https://drive.google.com/file/d/17hzWXcTeZUpaTgkwQiFEHK1IoUuVzJA7/view?usp=sharing'
-   },
-   
-   {
+    driveLink: 'https://drive.google.com/file/d/17hzWXcTeZUpaTgkwQiFEHK1IoUuVzJA7/view?usp=sharing',
+  },
+  {
     title: 'Java Topicwise Notes',
-    driveLink: 'https://drive.google.com/drive/folders/1HNR5X3Q_1RkYFalsIsdcB26yokJcTMiW?usp=sharing'
-   },
-   
-   {
-    title: 'All CheetSheets',
-    driveLink: 'https://drive.google.com/file/d/17hzWXcTeZUpaTgkwQiFEHK1IoUuVzJA7/view?usp=sharing'
-   },
-   {
+    driveLink: 'https://drive.google.com/drive/folders/1HNR5X3Q_1RkYFalsIsdcB26yokJcTMiW?usp=sharing',
+  },
+  {
+    title: 'All CheatSheets',
+    driveLink: 'https://drive.google.com/file/d/17hzWXcTeZUpaTgkwQiFEHK1IoUuVzJA7/view?usp=sharing',
+  },
+  {
     title: 'Networking Handwritten Notes',
-    driveLink: 'https://drive.google.com/file/d/110gggh-XlWnAXiM5gW1yUows9cle68Fo/view?usp=sharing'
-   },
-   {
+    driveLink: 'https://drive.google.com/file/d/110gggh-XlWnAXiM5gW1yUows9cle68Fo/view?usp=sharing',
+  },
+  {
     title: 'DSA in Python Full Course with Material (Topicwise)',
-    driveLink: 'https://drive.google.com/drive/folders/1mlJXFaG363Rj-cvLV-6SPC-WvillsBNU?usp=drive_link'
-   },
-   {
-    title: 'Pathway to Programming : Roadmaps to start any topic',
-    driveLink: 'https://drive.google.com/drive/folders/1OwqiY5xXhjEIH5eqKVHOA-G9WA749BEO?usp=drive_link'
-   },
-   {
+    driveLink: 'https://drive.google.com/drive/folders/1mlJXFaG363Rj-cvLV-6SPC-WvillsBNU?usp=drive_link',
+  },
+  {
+    title: 'Pathway to Programming: Roadmaps to start any topic',
+    driveLink: 'https://drive.google.com/drive/folders/1OwqiY5xXhjEIH5eqKVHOA-G9WA749BEO?usp=drive_link',
+  },
+  {
     title: 'Git E-Book',
-    driveLink: 'https://drive.google.com/file/d/1W1BdH3Esv3VgF1tkrUzxHswc7jxzwscM/view?usp=drive_link'
-   },
-   {
-    title: 'Three.js Cheetsheet',
-    driveLink: 'https://drive.google.com/file/d/1dTRWonTsezreC_hzDiXxGxqX1emDThJM/view?usp=sharing'
-   }
- ]
+    driveLink: 'https://drive.google.com/file/d/1W1BdH3Esv3VgF1tkrUzxHswc7jxzwscM/view?usp=drive_link',
+  },
+  {
+    title: 'Three.js Cheatsheet',
+    driveLink: 'https://drive.google.com/file/d/1dTRWonTsezreC_hzDiXxGxqX1emDThJM/view?usp=sharing',
+  },
+];
