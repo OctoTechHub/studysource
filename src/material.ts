@@ -174,4 +174,9 @@ export const handWritten = [
     title: 'Three.js Cheatsheet',
     driveLink: 'https://drive.google.com/file/d/1dTRWonTsezreC_hzDiXxGxqX1emDThJM/view?usp=sharing',
   },
+  {
+    title: 'Machine Learning E-Book',
+    driveLink: 'https://drive.google.com/file/d/1CxaH1pbw33Y9luf-5ChFejAXpEcJTinm/view?usp=sharing',
+  }
+  
 ];
